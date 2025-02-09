@@ -35,3 +35,5 @@ router.post('/', async function(req,res){
         res.status(500).json({message:"An error occored when logging in"});
     }
 })
+
+module.exports = router;
