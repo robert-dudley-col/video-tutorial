@@ -6,11 +6,21 @@ import {
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import Index from './routes';
+import StaffLogin from './routes/staff/login';
+import StaffIndex from './routes/staff';
 
 const router  = createBrowserRouter([
   {
     path:'/',
     element:<Index/>
+  },
+  {
+    path:'/staff/login',
+    element:<StaffLogin/>
+  },
+  {
+    path:'/staff',
+    element:<StaffIndex/>
   }
 ])
 
